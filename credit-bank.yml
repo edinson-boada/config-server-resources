@@ -4,3 +4,7 @@ spring:
       uri: mongodb://localhost:27017/db_credit_bank
 server:
   port: 8085
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8082/eureka/
