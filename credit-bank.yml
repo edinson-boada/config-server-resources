@@ -3,8 +3,8 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/db_credit_bank
 server:
-  port: 8085
+  port: 8081
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8082/eureka/
+      defaultZone: http://localhost:8080/eureka/
