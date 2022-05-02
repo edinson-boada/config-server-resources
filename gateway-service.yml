@@ -8,7 +8,3 @@ spring:
           uri: lb://credit-bank
           predicates:
             - Path=/api/**
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8080/eureka/
