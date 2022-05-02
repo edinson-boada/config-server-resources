@@ -1,0 +1,14 @@
+server:
+  port: 8090
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: credit-bank
+          uri: http://localhost:8081
+          predicates:
+            - Path=/bank/**
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/
