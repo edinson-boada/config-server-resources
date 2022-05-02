@@ -7,7 +7,7 @@ spring:
         - id: credit-bank
           uri: lb://credit-bank
           predicates:
-            - Path=/bank/**
+            - Path=/api/**
 eureka:
   client:
     serviceUrl:
